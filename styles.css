@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.controls {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.controls label, .controls input, .controls button {
+    margin-right: 10px;
+}
